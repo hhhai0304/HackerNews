@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.h3solution.hackernews.StoryActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_object"
+        android:background="@color/mainStoryTitle"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/txt_story_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            tools:text="How to sleep"/>
+
+        <TextView
+            android:id="@+id/txt_story_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/urlColor"
+            android:textStyle="italic|bold"
+            tools:text="http://www.anandtech.com/show/11464/intel-announces-skylakex-bringing-18core-hcc-silicon-to-consumers-for-1999"/>
+
+        <TextView
+            android:id="@+id/txt_story_time_ago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="4 hours ago - hhhai0304"/>
+
+        <TextView
+            android:id="@+id/txt_story_comment_count"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="12 Comments"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_comment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/scoreBackground"
+        android:padding="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_object" />
+
+</android.support.constraint.ConstraintLayout>

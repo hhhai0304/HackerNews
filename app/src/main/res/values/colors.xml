@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5a06</color>
+    <color name="colorPrimaryDark">#ff5a06</color>
+    <color name="colorAccent">#ff5a06</color>
+    <color name="windowBackground">#f4f4f4</color>
+
+    <color name="scoreBackground">#ffe4bb</color>
+    <color name="commentCount">#f06837</color>
+    <color name="itemDivision">#fef0db</color>
+    <color name="mainTextColor">#adadad</color>
+
+    <color name="mainStoryTitle">#ffb55d</color>
+    <color name="urlColor">#ff0008</color>
+    <color name="byColor">#ff5a08</color>
+</resources>

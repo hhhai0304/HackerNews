@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hacker News</string>
+    <string name="main_activity_title">Top Stories</string>
+    <string name="story_acticity_title">Story</string>
+
+    <string name="progress_dialog_message">Getting data (%d)\%</string>
+
+    <plurals name="comment">
+        <item quantity="zero">%d Comment</item>
+        <item quantity="one">%d Comment</item>
+        <item quantity="other">%d Comments</item>
+    </plurals>
+
+    <string name="comment_by" formatted="false">
+        <![CDATA[
+        %d hours ago - <font color=\'#ff5a08\'>%s</font>
+        ]]>
+    </string>
+</resources>
